@@ -46,11 +46,10 @@ export default function ProjectGallery({ projects, delay, category }) {
                       >
                         <Image
                           className="w-full h-auto max-h-full rounded-lg"
-                          src={image}
+                          src={`/Espe-Portfolio/${image}`}
                           alt=""
                         />
                         <div className="rounded-lg absolute top-0 left-0 right-0 bottom-0 opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-75 text-white text-center flex flex-col items-center justify-center font-inter text-4xl text-light-gold">
-                          <h1>Learn more about:</h1>
                           <h1 className="my-2">{project.title}</h1>
                         </div>
                       </div>
