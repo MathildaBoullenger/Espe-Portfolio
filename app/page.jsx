@@ -25,7 +25,6 @@ export default async function HomePage() {
             <Image
               src={LinkedInLogo} // Path to your image in the public directory
               alt="LinkedIn Logo"
-              width={50} // Specify the desired width
               height={20} // Specify the desired height
               className="h-5"
             />
