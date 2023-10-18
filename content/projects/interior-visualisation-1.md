@@ -4,12 +4,12 @@ title: "Interior visualisation - Two Bedroom Home"
 date: "2023-10-07"
 
 images:
-- "public/images/Kitchen.png"
-- "public/images/Bedroom.png"
-- "public/images/LivingRoom.png"
-- "public/images/LivingRoom2.png"
-- "public/images/Garden.png"
-- "public/images/Bed.png"
+- "/images/Kitchen.png"
+- "/images/Bedroom.png"
+- "/images/LivingRoom.png"
+- "/images/LivingRoom2.png"
+- "/images/Garden.png"
+- "/images/Bed.png"
 
 visualisations:
 - "https://kuula.co/share/59r8r/collection/7XNP2?logo=1&info=1&fs=1&vr=0&zoom=1&sd=1&autop=10&autopalt=1&thumbs=1"
