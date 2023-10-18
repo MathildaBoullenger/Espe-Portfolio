@@ -26,14 +26,16 @@ export default async function HomePage() {
               src={LinkedInLogo} // Path to your image in the public directory
               alt="LinkedIn Logo"
               height={20} // Specify the desired height
-              className="h-5"
             />
           </Button>
         </Link>
 
         <Link href="mailto:esperanzalbani@gmail.com" target="_blank">
           <Button delay={750}>
-            <img src="/images/Email1.png" className="h-5" />
+            <Image
+            src="/images/Email1.png" className="h-5"
+            height={20}
+            />
           </Button>
         </Link>
       </div>
