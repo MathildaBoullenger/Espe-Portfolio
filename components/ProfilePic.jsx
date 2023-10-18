@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 export default function ProfilePic({ delay, onImageLoad }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,7 +28,7 @@ export default function ProfilePic({ delay, onImageLoad }) {
         isVisible ? 'animate-fade-left md:w-1/3' : 'opacity-0'
       }`}
     >
-      <img
+      <Image
         src="/images/Profile.jpg"
         alt="Profile"
         className="w-full h-auto md:rounded-lg md:max-w-md mb-10"

@@ -3,6 +3,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ProjectGallery({ projects, delay, category }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -43,7 +44,7 @@ export default function ProjectGallery({ projects, delay, category }) {
                         key={i}
                         className="w-full h-auto max-h-full rounded-lg"
                       >
-                        <img
+                        <Image
                           className="w-full h-auto max-h-full rounded-lg"
                           src={image}
                           alt=""

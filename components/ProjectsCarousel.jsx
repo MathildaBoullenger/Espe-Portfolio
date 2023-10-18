@@ -1,5 +1,6 @@
 "use client"
 
+import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 
 export default function ProjectsCarousel({ projects, delay }) {
@@ -24,7 +25,7 @@ export default function ProjectsCarousel({ projects, delay }) {
             project.images.map((image, i) => (
               image && (
                 <div key={i} data-carousel-item>
-                  <img src={image} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+                  <Image src={image} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
                 </div>
               )
             ))

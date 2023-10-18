@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-
+import Image from "next/image";
 
 export default function DisplayFeaturedProject({ project, delay }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,7 +28,7 @@ export default function DisplayFeaturedProject({ project, delay }) {
        
         <div className="relative overflow-hidden transition-all ease-out duration-300 h-48 mob:h-auto" style={{ height: '600px' }}>
           <Link href={`/projects/${project.slug}`}>
-            <img
+            <Image
               alt="Project One Test"
               className="filter rounded-2xl h-full w-full object-cover hover:scale-110 transition-all ease-out duration-300"
               src={project.images[0]}

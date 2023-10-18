@@ -6,6 +6,7 @@ import Service from "@/components/Service";
 import Link from "next/link";
 import Image from "next/image";
 import LinkedInLogo from "../public/images/LI-Logo-white.png"
+import EmailLogo from "../public/images/Email1.png"
 
 export default async function HomePage() {
   const project = await getFeaturedProject();
@@ -33,7 +34,8 @@ export default async function HomePage() {
         <Link href="mailto:esperanzalbani@gmail.com" target="_blank">
           <Button delay={750}>
             <Image
-            src="/images/Email1.png" className="h-5"
+            src={EmailLogo}
+            alt="Email Logo"
             height={20}
             />
           </Button>
