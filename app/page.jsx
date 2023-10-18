@@ -5,6 +5,7 @@ import { getFeaturedProject } from "@/lib/projects";
 import Service from "@/components/Service";
 import Link from "next/link";
 import Image from "next/image";
+import LinkedInLogo from "../public/images/LI-Logo-white.png"
 
 export default async function HomePage() {
   const project = await getFeaturedProject();
@@ -22,7 +23,7 @@ export default async function HomePage() {
         >
           <Button delay={750}>
             <Image
-              src="/images/LI-Logo-white.png" // Path to your image in the public directory
+              src={LinkedInLogo} // Path to your image in the public directory
               alt="LinkedIn Logo"
               width={50} // Specify the desired width
               height={20} // Specify the desired height
@@ -30,12 +31,7 @@ export default async function HomePage() {
             />
           </Button>
         </Link>
-        In the Image component, you specify the path to your image, its alt
-        text, and the desired width and height attributes. You can adjust the
-        width and height values according to your design requirements. Make sure
-        to replace /LI-Logo-white.png with the actual path to your image in the
-        public directory. This will ensure that the image is properly optimized
-        and served by Next.js.
+
         <Link href="mailto:esperanzalbani@gmail.com" target="_blank">
           <Button delay={750}>
             <img src="/images/Email1.png" className="h-5" />
