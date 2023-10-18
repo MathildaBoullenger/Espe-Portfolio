@@ -22,7 +22,7 @@ export default async function HomePage() {
         >
           <Button delay={750}>
             <Image
-              src="/LI-Logo-white.png" // Path to your image in the public directory
+              src="/images/LI-Logo-white.png" // Path to your image in the public directory
               alt="LinkedIn Logo"
               width={50} // Specify the desired width
               height={20} // Specify the desired height
