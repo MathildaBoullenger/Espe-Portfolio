@@ -4,7 +4,7 @@ title: "Window Display"
 date: "2023-10-07"
 
 images:
-- "/nextjs-github-pages/images/WindowDisplay.jpeg"
+- "/images/WindowDisplay.jpeg"
 
 category: "Design Concept"
 ---

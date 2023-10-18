@@ -18,11 +18,11 @@ export default async function HomePage() {
         <div className="mt-2 laptop:mt-5 flex flex-wrap mob:flex-nowrap link">
 
         <Link href="https://www.linkedin.com/in/esperanzalbani/" target="_blank">
-        <Button delay={750}> <img src="/nextjs-github-pages/images/LI-Logo-white.png" className="h-5"/></Button>
+        <Button delay={750}> <img src="/images/LI-Logo-white.png" className="h-5"/></Button>
         </Link>
 
         <Link href="mailto:esperanzalbani@gmail.com" target="_blank">
-        <Button delay={750}><img src="/nextjs-github-pages/images/Email1.png" className="h-5"/></Button>
+        <Button delay={750}><img src="/images/Email1.png" className="h-5"/></Button>
         </Link>
         </div>   
         

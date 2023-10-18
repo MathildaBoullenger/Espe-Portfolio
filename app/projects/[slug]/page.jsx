@@ -4,7 +4,10 @@ import ThreeDimensionsVisualisation from "@/components/ThreeDimensionsVisualisat
 import { getProject } from "@/lib/projects";
 
 export async function generateStaticParams() {
-    return [{ slug: 'interior-visualisation-1' }, { slug: 'interior-visualisation-2' }]
+  return [
+    { slug: "interior-visualisation-1" },
+    { slug: "interior-visualisation-2" },
+  ];
 }
 
 export default async function ProjectPage({ params: { slug } }) {
