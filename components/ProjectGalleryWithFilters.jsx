@@ -27,7 +27,7 @@ export default function ProjectGalleryWithFilters({ projects, delay }) {
     <>
       <div
       className={`${
-        isVisible ? "animate-fade-left flex justify-center mx-auto mt-16 mb-8" : "opacity-0" }`}>
+        isVisible ? "animate-fade-left flex justify-center mx-auto mt-16 mb-8 lg:flex-row md:flex-col sm:flex-col" : "opacity-0" }`}>
         <Button
           delay={0}
           onClick={() => handleCategorySelection("Interior Visualisation")}
