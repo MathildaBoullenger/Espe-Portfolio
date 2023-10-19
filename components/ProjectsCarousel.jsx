@@ -25,7 +25,12 @@ export default function ProjectsCarousel({ projects, delay }) {
             project.images.map((image, i) => (
               image && (
                 <div key={i} data-carousel-item>
-                  <Image src={`/Espe-Portfolio/${image}`} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+                  <Image 
+                  src={`/Espe-Portfolio/${image}`} 
+                  className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" 
+                  alt="..." 
+                  width="800"
+                  height="600"/>
                 </div>
               )
             ))

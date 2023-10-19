@@ -33,6 +33,8 @@ export default function ProfilePic({ delay, onImageLoad }) {
         alt="Profile"
         className="w-full h-auto md:rounded-lg md:max-w-md mb-10"
         onLoad={handleImageLoad} // Attach the onLoad event handler
+        width="800"
+        height="600"
       />
     </div>
   );
