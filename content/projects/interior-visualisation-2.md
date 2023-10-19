@@ -4,7 +4,7 @@ title: "Window Display"
 date: "2023-10-07"
 
 images:
-- "/images/WindowDisplay.jpeg"
+- "/images/WindowDisplay.webp"
 
 category: "Design Concept"
 ---

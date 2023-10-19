@@ -29,7 +29,7 @@ export default function ProfilePic({ delay, onImageLoad }) {
       }`}
     >
       <Image
-        src="/images/Profile.jpg"
+        src="/Espe-Portfolio/images/Profile.webp"
         alt="Profile"
         className="w-full h-auto md:rounded-lg md:max-w-md mb-10"
         onLoad={handleImageLoad} // Attach the onLoad event handler
