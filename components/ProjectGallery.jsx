@@ -35,6 +35,7 @@ export default function ProjectGallery({ projects, delay, category }) {
   console.log('filteredProjects', filteredProjects)
 
   return (
+    <>
     <div
       className={`${
         isVisible ? "animate-fade-left full lg:w-full" : "opacity-0"
@@ -48,7 +49,7 @@ export default function ProjectGallery({ projects, delay, category }) {
               {project.images.slice(0, 4).map(
                 (image, i) =>
                   image && (
-                    <Link href={`/projects/${project.slug}`}>
+                    <Link key={i} href={`/projects/${project.slug}`}>
                       <div
                         key={i}
                         className={`rounded-lg ${
@@ -80,6 +81,7 @@ export default function ProjectGallery({ projects, delay, category }) {
         </div>
       ))}
     </div>
+    </>
   );
-
+  
 }
