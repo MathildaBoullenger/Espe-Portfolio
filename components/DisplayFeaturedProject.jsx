@@ -31,7 +31,9 @@ export default function DisplayFeaturedProject({ project, delay }) {
             <Image
               alt="Project One Test"
               className="filter rounded-2xl h-full w-full object-cover hover:scale-110 transition-all ease-out duration-300"
-              src={`/Espe-Portfolio/${project.images[0]}`}
+              src={`/Espe-Portfolio/${project.images[0]}`} 
+              width="800"
+              height="600"
             />
           </Link>
       
