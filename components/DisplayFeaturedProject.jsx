@@ -26,14 +26,14 @@ export default function DisplayFeaturedProject({ project, delay }) {
       <h1 className="font-inter font-bold pb-3 text-3xl text-light-gold">Latest Work.</h1>
         <h2 className="font-poppins text-xl mb-6 text-light-gold">{project.title}</h2>
        
-        <div className="relative overflow-hidden transition-all ease-out duration-300 h-48 mob:h-auto" style={{ height: '600px' }}>
+        <div className="relative overflow-hidden transition-all ease-out duration-300 mob:h-auto flex justify-center items-center">
           <Link href={`/projects/${project.slug}`}>
             <Image
               alt="Project One Test"
-              className="filter rounded-2xl h-full w-full object-cover hover:scale-110 transition-all ease-out duration-300"
+              className="filter rounded-lg object-cover hover:scale-110 transition-all ease-out duration-300"
               src={`/Espe-Portfolio/${project.images[0]}`} 
-              width="800"
-              height="600"
+              width="900"
+              height="100"
             />
           </Link>
       

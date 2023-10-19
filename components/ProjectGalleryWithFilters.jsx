@@ -1,20 +1,33 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ProjectGallery from "./ProjectGallery";
 import Button from "./Button";
 
-export default function ProjectGalleryWithFilters({ projects }) {
+export default function ProjectGalleryWithFilters({ projects, delay }) {
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [isVisible, setIsVisible] = useState(false);
 
   const handleCategorySelection = (category) => {
     console.log("selected category:", category);
     setSelectedCategory(category);
   };
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, delay);
+
+    // Clear the timer when the component unmounts or when the delay changes
+    return () => clearTimeout(timer);
+  }, [delay]);
+
+
   return (
     <>
-      <div className="flex justify-center p-8 mx-auto">
+      <div
+      className={`${
+        isVisible ? "animate-fade-left flex justify-center mx-auto mt-16 mb-8" : "opacity-0" }`}>
         <Button
           delay={0}
           onClick={() => handleCategorySelection("Interior Visualisation")}
@@ -40,9 +53,10 @@ export default function ProjectGalleryWithFilters({ projects }) {
           Panoramic render 360°
         </Button>
       </div>
+
       <ProjectGallery
         projects={projects}
-        delay={500}
+        delay={1000}
         category={selectedCategory}
       />
     </>

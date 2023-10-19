@@ -11,7 +11,7 @@ export default async function ProjectsPage() {
       <Heading delay={250}>Projects</Heading>
 
       <ProjectGalleryWithFilters
-        projects={projects}
+        delay={750} projects={projects}
       ></ProjectGalleryWithFilters>
     </>
   );

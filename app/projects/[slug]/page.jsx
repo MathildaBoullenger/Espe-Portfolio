@@ -5,8 +5,9 @@ import { getProject } from "@/lib/projects";
 
 export async function generateStaticParams() {
   return [
-    { slug: "interior-visualisation-1" },
-    { slug: "interior-visualisation-2" },
+    { slug: "project1" },
+    { slug: "project2" },
+    { slug: "project3" }
   ];
 }
 

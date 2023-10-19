@@ -7,7 +7,7 @@ import './globals.css';
 export default function RootLayout({ children }) {
     return (
         <html lang= "en" className={`flex justify-center ${inter.variable}`}>
-            <body className="bg-gray-200 flex flex-col px-4 py-2 min-h-screen w-[66%]">
+            <body className="bg-gray-200 flex flex-col px-4 py-2 min-h-screen w-[100%] md:w-[66%] lg:w-[50%]">
                 <header>
                     <NavBar></NavBar>
                 </header>
