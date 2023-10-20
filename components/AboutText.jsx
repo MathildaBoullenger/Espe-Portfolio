@@ -20,7 +20,7 @@ return(
         isVisible ? "opacity-100" : "opacity-0"
       }`}>
 
-          <p className="lg:text-4xl md:text-2xl sm:text-xl font-inter">
+          <p className="lg:text-4xl md:text-2xl text-2xl font-inter">
             Passionate 3D Designer and Architect | Creating Functional and Aesthetically Pleasing Spaces
           </p>
 

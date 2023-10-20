@@ -18,7 +18,7 @@ export default function ProjectsCarousel({ projects, delay }) {
   }, [delay]);
 
   return (
-    <div id="default-carousel" data-carousel="slide" className={`animate-fade-left relative w-full mt-16 ${isVisible ? '' : 'opacity-0'}`}>
+    <div id="default-carousel" data-carousel="slide" className={`relative w-full mt-16 ${isVisible ? '' : 'opacity-0'}`}>
       {projects.map((project, index) => (
         <div key={index} className="relative h-56 overflow-hidden rounded-lg md:h-96">
           {project.images && project.images.length > 0 ? (
