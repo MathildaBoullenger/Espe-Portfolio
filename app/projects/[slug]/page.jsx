@@ -19,7 +19,8 @@ export default async function ProjectPage({ params: { slug } }) {
     <>
       <Heading>{project.title}</Heading>
 
-      <ProjectsCarousel project={project} delay={750} />
+      {/*<ProjectsCarousel project={project} delay={750} />*/}
+
       <NewCarousel project={project} delay={750}/>
 
       <div className="mt-10">

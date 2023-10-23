@@ -18,6 +18,7 @@ export default function NewCarousel({ project }) {
           <img
             src={`/Espe-Portfolio/${image}`}
             alt="Slide"
+            className="rounded-lg mt-8"
           />
           <Carousel.Caption>
             {/*<h3>Title</h3>
