@@ -1,44 +1,47 @@
-"use client"
+"use client";
 
 import { useState, useEffect } from "react";
 
-export default function ThreeDimensionsVisualisation({projects, delay}) {
-    console.log('3d', projects);
+export default function ThreeDimensionsVisualisation({ project, delay }) {
+  const [isVisible, setIsVisible] = useState(false);
 
-    const [isVisible, setIsVisible] = useState(false);
-  
-    useEffect(() => {
-      const timer = setTimeout(() => {
-        setIsVisible(true);
-      }, delay);
-  
-      // Clear the timer when the component unmounts or when the delay changes
-      return () => clearTimeout(timer);
-    }, [delay]);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, delay);
 
-    return (
-        <div className={`${isVisible ? "animate-fade-left full" : "opacity-0"}`}>
-          {projects.map((project, index) => (
-            <div key={index} className="w-full h-full rounded-lg p-8 flex items-center justify-center">
-              {project.visualisations && project.visualisations.length > 0 ? (
-                <div className="w-full">
-                  {project.visualisations.map((visualisation, i) => (
-                    visualisation && (
-                      <iframe className="mb-10 rounded-lg" key={i} src={visualisation} width="100%" height="600"></iframe>
-                    )
-                  ))}
-                </div>
-              ) : (
-                <p>No visualizations available</p>
-              )}
-            </div>
-          ))}
-        </div>
-      );
-      
-            }
+    // Clear the timer when the component unmounts or when the delay changes
+    return () => clearTimeout(timer);
+  }, [delay]);
 
-    {/* 
+  return (
+    <div className={`${isVisible ? "animate-fade-left full" : "opacity-0"}`}>
+      <div className="w-full h-full rounded-lg p-8 flex items-center justify-center">
+        {project.visualisations && project.visualisations.length > 0 ? (
+          <div className="w-full">
+            {project.visualisations.map(
+              (visualisation, i) =>
+                visualisation && (
+                  <iframe
+                    className="mb-10 rounded-lg"
+                    key={i}
+                    src={visualisation}
+                    width="100%"
+                    height="600"
+                  />
+                )
+            )}
+          </div>
+        ) : (
+          <p>No visualizations available</p>
+        )}
+      </div>
+    </div>
+  );
+}
+
+{
+  /* 
 <div className={`${
         isVisible ? "animate-fade-left full lg:w-3/4 mx-auto" : "opacity-0"
       }`} >
@@ -78,4 +81,5 @@ export default function ThreeDimensionsVisualisation({projects, delay}) {
   );
 }
 
-*/}
+*/
+}
