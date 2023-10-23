@@ -8,6 +8,7 @@ import Image from "next/image";
 import LinkedInLogo from "../public/images/LI-Logo-white.png"
 import EmailLogo from "../public/images/Email1.png"
 
+
 export default async function HomePage() {
   const project = await getFeaturedProject();
 

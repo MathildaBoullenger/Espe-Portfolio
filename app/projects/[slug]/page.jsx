@@ -2,6 +2,7 @@ import Heading from "@/components/Heading";
 import ProjectsCarousel from "@/components/ProjectsCarousel";
 import ThreeDimensionsVisualisation from "@/components/ThreeDimensionsVisualisation";
 import { getProject } from "@/lib/projects";
+import NewCarousel from "@/components/NewCarousel";
 
 export async function generateStaticParams() {
   return [
@@ -13,11 +14,13 @@ export async function generateStaticParams() {
 
 export default async function ProjectPage({ params: { slug } }) {
   const project = await getProject(slug);
-  const projects = [project];
+
   return (
     <>
       <Heading>{project.title}</Heading>
-      <ProjectsCarousel projects={projects} delay={750} />
+
+      <ProjectsCarousel project={project} delay={750} />
+      <NewCarousel project={project} delay={750}/>
 
       <div className="mt-10">
         <article
@@ -27,9 +30,9 @@ export default async function ProjectPage({ params: { slug } }) {
       </div>
 
       <ThreeDimensionsVisualisation
-        projects={projects}
+        project={project}
         delay={1000}
-      ></ThreeDimensionsVisualisation>
+      />
 
       {/*<p className="italic pb-2">{project.date}</p>
             <img src={project.images[0]} alt=""
