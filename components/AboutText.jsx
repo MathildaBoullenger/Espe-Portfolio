@@ -21,15 +21,19 @@ return(
       }`}>
 
           <p className="lg:text-4xl md:text-2xl text-2xl font-inter">
-            Passionate 3D Designer and Architect | Creating Functional and Aesthetically Pleasing Spaces
+            I am a passionate 3D Designer and Architect
           </p>
 
-          <p className="mt-4 text-intellectual-grey font-poppins">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod sapien eu purus mattis, a laoreet nulla consectetur. Vivamus auctor nisi eget ligula sodales, nec tempus lectus viverra. Donec varius nisl ut vestibulum.
+          <p className="mt-4 text-intellectual-grey font-inter">
+          As a highly motivated 3D Designer, Interior Designer, and Architect, I am passionate about creating spaces that are functional, aesthetically pleasing, and in line with my clients' needs and preferences. 
+          <br></br>
+          With extensive experience in using a variety of 3D design tools and software, as well as a "can-do" attitude, I am always eager to take on new challenges and continue learning and growing professionally.
+          <br></br>
+          <strong>If you're looking for an experienced, dedicated, and constantly evolving designer, I would love to hear from you!</strong>
           </p>
 
           <div className="mt-4">
-            <a href="mailto:esperanzalbani@gmail.com" className="text-light-gold hover:underline mr-4">esperanzalbani@gmail.com</a>
+            <a href="mailto:esperanzalbani@gmail.com" className="text-light-gold hover:underline mr-4 font-inter">esperanzalbani@gmail.com</a>
             <a href="tel:+64 27 375 4054" className="text-light-gold hover:underline">+64 27 375 4054</a>
           </div>
 

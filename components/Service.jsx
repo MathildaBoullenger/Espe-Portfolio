@@ -19,7 +19,7 @@ const [isVisible, setIsVisible] = useState(false);
 return (
 
 <div
-      className={`${isVisible ? "font-roboto font-bold w-full p-8 rounded-lg transition-all ease-out duration-300 bg-intellectual-grey text-white hover:bg-light-grey hover:text-intellectual-grey c link" : "opacity-0"}`}>
+      className={`${isVisible ? "font-roboto font-bold w-full p-8 sm:p-4 rounded-lg transition-all ease-out duration-300 bg-intellectual-grey text-white hover:bg-light-grey hover:text-intellectual-grey c link" : "opacity-0"}`}>
       <h1 className="text-2xl">{title}</h1>
       <p className="font-lato mt-4 opacity-40">{content}</p>
 </div>

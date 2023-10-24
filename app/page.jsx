@@ -57,13 +57,18 @@ export default async function HomePage() {
         <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
           <Service
             delay={2000}
-            title={"Renders"}
-            content={"This is my best skill!"}
+            title={"3D Design"}
+            content={"Elevate your projects with 3D designs. I create stunning digital models and visualizations to bring your concepts to life."}
           ></Service>
           <Service
             delay={2000}
-            title={"3D Design"}
-            content={"This is my second best skill!"}
+            title={"Interior Design"}
+            content={"Transform your spaces with interior design. I blend aesthetics and functionality to create harmonious environments tailored to your style."}
+          ></Service>
+            <Service
+            delay={2000}
+            title={"Architecture"}
+            content={"As a qualified architect I am passionate about constructing spaces  that are visually appealing, functional, and aligned with your unique needs and vision."}
           ></Service>
         </div>
       </div>

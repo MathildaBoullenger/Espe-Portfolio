@@ -25,13 +25,13 @@ export default function ProfilePic({ delay, onImageLoad }) {
   return (
     <div
       className={`${
-        isVisible ? 'animate-fade-left md:w-1/3' : 'opacity-0'
+        isVisible ? 'animate-fade-left min-w-2/3 md:mt-10' : 'opacity-0'
       }`}
     >
       <Image
-        src="/Espe-Portfolio/images/Profile.webp"
+        src="/Espe-Portfolio/images/Profile.png"
         alt="Profile"
-        className="w-full h-auto md:rounded-lg md:max-w-md mb-10"
+        className="w-full h-auto rounded-lg mb-10"
         onLoad={handleImageLoad} // Attach the onLoad event handler
         width="800"
         height="600"
