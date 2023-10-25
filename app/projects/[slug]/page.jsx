@@ -1,5 +1,4 @@
 import Heading from "@/components/Heading";
-import ProjectsCarousel from "@/components/ProjectsCarousel";
 import ThreeDimensionsVisualisation from "@/components/ThreeDimensionsVisualisation";
 import { getProject } from "@/lib/projects";
 import NewCarousel from "@/components/NewCarousel";

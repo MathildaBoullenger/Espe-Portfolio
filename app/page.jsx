@@ -57,19 +57,26 @@ export default async function HomePage() {
         <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
           <Service
             delay={2000}
-            title={"3D Design"}
-            content={"Elevate your projects with 3D designs. I create stunning digital models and visualizations to bring your concepts to life."}
+            title={"3D Architectural Visualization Services with an Artistic Approach"}
+            content={"My 3D architectural visualization services combine technical precision with artistic finesse to bring architectural designs to life. I create highly realistic and aesthetically pleasing visual representations of your projects, enabling you to present your ideas with clarity and impact."}
           ></Service>
           <Service
             delay={2000}
-            title={"Interior Design"}
-            content={"Transform your spaces with interior design. I blend aesthetics and functionality to create harmonious environments tailored to your style."}
+            title={"3D Modeling of Exterior and Interior Designs"}
+            content={"I specialize in creating detailed 3D models of both exterior and interior spaces. My models capture every aspect of your designs, from architectural elements and materials to lighting and furnishings. This helps you visualize the final outcome and make informed design decisions."}
           ></Service>
-            <Service
+          <Service
             delay={2000}
-            title={"Architecture"}
-            content={"As a qualified architect I am passionate about constructing spaces  that are visually appealing, functional, and aligned with your unique needs and vision."}
+            title={"Virtual Environments"}
+            content={"I offer immersive virtual experiences, including: Virtual 360 Tours: Take your clients on a virtual journey through their future spaces. My 360-degree tours provide a lifelike walkthrough of your designs, allowing clients to explore every angle and detail."}
           ></Service>
+          <Service
+            delay={2000}
+            title={"3D Plans:"}
+            content={"I provide comprehensive 3D plans that give a deeper understanding of your designs. This includes: Floor Plans: Detailed 3D floor plans with accurate measurements and spatial relationships. Interior Layouts: Visualize how furniture and decor fit within the space. Exterior Layouts: Present the landscaping, hardscaping, and outdoor design elements."}
+          ></Service>
+
+
         </div>
       </div>
 

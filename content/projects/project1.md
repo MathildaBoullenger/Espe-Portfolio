@@ -18,9 +18,23 @@ visualisations:
 category: "Interior Visualisation"
 ---
 
-## Interior visualisation - Two Bedroom Home
+## Discover my recent project, Two-Bedroom Home Designs, where I've visualized modern living through detailed 3D renderings.
 
-[__ADD CONTENT__]
+Key features: 
+* Spacious Open-Plan Living: Open-plan kitchen, living, and dining area, flooded with natural light.
+* Two Private Bedrooms:Two private bedrooms.
+* Private Courtyard: outdoor space.
 
-This is a test content
+External Color Palette:
+* Soffits: Resene Half Black White
+* Austral Bricks: White
+* Aluminum Cladding: Matt Black
+* Windows and Front Door: Ebony
+
+Internal Color Scheme:
+* Carpet: Dark Grey
+* Kitchen Cabinetry: Hamptons Elm
+* Kitchen Benchtop: White top.
+
+This project showcases contemporary design with practical living. Explore my renderings to experience the blend of aesthetics and functionality that defines my work.
 
