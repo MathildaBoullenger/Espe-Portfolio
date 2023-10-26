@@ -7,8 +7,6 @@ import ProjectContent from "@/components/ProjectContent";
 export async function generateStaticParams() {
   return [
     { slug: "project1" },
-    { slug: "project2" },
-    { slug: "project3" }
   ];
 }
 
