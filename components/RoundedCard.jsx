@@ -1,10 +1,26 @@
+"use client"
+
 import React from 'react';
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
 
+const RoundedCard = ({ title, text, image, delay }) => {
+  const [isVisible, setIsVisible] = useState(false);
 
-const RoundedCard = ({ title, text, image }) => {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, delay);
+
+    return () => clearTimeout(timer);
+  }, [delay]);
+
     return (
-      <div className="card rounded">
+          <div
+      className={`${
+        isVisible ? "animate-fade-left card rounded" : "opacity-0"
+      }`}
+    >
         <div className="lg:flex justify-center items-center">
           <div className="lg:w-3/4">
             <Image src={image} 

@@ -8,10 +8,10 @@ export default async function ProjectsPage() {
 
   return (
     <>
-      <Heading delay={250}>Projects</Heading>
+      <Heading delay={0}>Projects</Heading>
 
       <ProjectGalleryWithFilters
-        delay={750} projects={projects}
+        delay={100} projects={projects}
       ></ProjectGalleryWithFilters>
     </>
   );

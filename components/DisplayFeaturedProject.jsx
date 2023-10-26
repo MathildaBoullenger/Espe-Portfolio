@@ -24,7 +24,7 @@ export default function DisplayFeaturedProject({ project, delay }) {
       <div className="overflow-hidden rounded-lg p-2 laptop:p-4 first:ml-0 link">
        
       <h1 className="font-inter font-bold pb-3 text-3xl text-light-gold">Latest Work.</h1>
-        <h2 className="font-poppins text-xl mb-6 text-light-gold">{project.title}</h2>
+        <h2 className="font-inter text-xl mb-6 text-light-gold">{project.title}</h2>
        
         <div className="relative overflow-hidden transition-all ease-out duration-300 mob:h-auto flex justify-center items-center">
           <Link href={`/projects/${project.slug}`}>

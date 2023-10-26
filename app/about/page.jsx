@@ -6,10 +6,10 @@ export default function AboutPage() {
 
   return (
     <>
-      <Heading>About Me</Heading>
+      <Heading delay={0}>About Me</Heading>
       <div className="mt-8 md:flex md:items-center md:space-x-10">
 
-        <AboutContent delay={500}></AboutContent>
+        <AboutContent delay={100}></AboutContent>
 
        </div>
     </>

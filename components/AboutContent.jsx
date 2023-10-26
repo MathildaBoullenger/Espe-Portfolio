@@ -23,8 +23,8 @@ export default function AboutContent({delay}) {
 
   return (
     <>
-      <ProfilePic delay={500} onImageLoad={handleImageLoad} />
-      {imageLoaded && <AboutText delay={750} />}
+      <ProfilePic delay={100} onImageLoad={handleImageLoad} />
+      {imageLoaded && <AboutText delay={200} />}
     </>
   );
 }

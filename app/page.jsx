@@ -15,15 +15,15 @@ export default async function HomePage() {
   return (
     <>
       <Heading delay={0}>Welcome!</Heading>
-      <Heading delay={250}>I'm Esperanza - a 3D Designer</Heading>
-      <Heading delay={500}> based in Auckland, New Zealand.</Heading>
+      <Heading delay={100}>I'm Esperanza - a 3D Designer</Heading>
+      <Heading delay={200}> based in Auckland, New Zealand.</Heading>
 
       <div className="mt-2 laptop:mt-5 flex flex-wrap mob:flex-nowrap link">
         <Link
           href="https://www.linkedin.com/in/esperanzalbani/"
           target="_blank"
         >
-          <Button delay={750}>
+          <Button delay={300}>
             <Image
               src={LinkedInLogo} // Path to your image in the public directory
               alt="LinkedIn Logo"
@@ -33,7 +33,7 @@ export default async function HomePage() {
         </Link>
 
         <Link href="mailto:esperanzalbani@gmail.com" target="_blank">
-          <Button delay={750}>
+          <Button delay={300}>
             <Image
             src={EmailLogo}
             alt="Email Logo"
@@ -46,35 +46,43 @@ export default async function HomePage() {
       {/* project section */}
 
       <DisplayFeaturedProject
-        delay={1500}
+        delay={400}
         project={project}
       ></DisplayFeaturedProject>
 
       {/* services section */}
 
       <div className="mt-16 mb-16 laptop:mt-30 p-2 laptop:p-0">
-        <Heading delay={1750}>Services.</Heading>
+        <Heading delay={500}>Services.</Heading>
         <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
           <Service
-            delay={2000}
-            title={"3D Architectural Visualization Services with an Artistic Approach"}
-            content={"My 3D architectural visualization services combine technical precision with artistic finesse to bring architectural designs to life. I create highly realistic and aesthetically pleasing visual representations of your projects, enabling you to present your ideas with clarity and impact."}
-          ></Service>
-          <Service
-            delay={2000}
+            delay={500}
             title={"3D Modeling of Exterior and Interior Designs"}
-            content={"I specialize in creating detailed 3D models of both exterior and interior spaces. My models capture every aspect of your designs, from architectural elements and materials to lighting and furnishings. This helps you visualize the final outcome and make informed design decisions."}
-          ></Service>
+            content={"Detailed 3D models of both exterior and interior spaces."}
+          ></Service>          
           <Service
-            delay={2000}
+            delay={500}
             title={"Virtual Environments"}
-            content={"I offer immersive virtual experiences, including: Virtual 360 Tours: Take your clients on a virtual journey through their future spaces. My 360-degree tours provide a lifelike walkthrough of your designs, allowing clients to explore every angle and detail."}
+            content={"Immersive virtual experiences, including 360-degree tours for a lifelike walkthrough of your designs."}
+          ></Service>          
+          <Service
+            delay={500}
+            title={"3D Plans"}
+            content={"Comprehensive 3D plans that give a deeper understanding of your designs."}
           ></Service>
           <Service
-            delay={2000}
-            title={"3D Plans:"}
-            content={"I provide comprehensive 3D plans that give a deeper understanding of your designs. This includes: Floor Plans: Detailed 3D floor plans with accurate measurements and spatial relationships. Interior Layouts: Visualize how furniture and decor fit within the space. Exterior Layouts: Present the landscaping, hardscaping, and outdoor design elements."}
+            delay={500}
+            title={"Real Estate 3D Rendering Services"}
+            content={"For realtors and developers- a powerful tool to reveal the full potential of properties."}
           ></Service>
+          <Service
+            delay={500}
+            title={"Amenities Visualization"}
+            content={"Showcase community spaces, amenities, and communal areas to enhance property marketing."}
+          ></Service>
+
+
+
 
 
         </div>

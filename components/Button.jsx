@@ -19,7 +19,7 @@ export default function Button({ children, delay, ...props }) {
       type="button"
       className={`${
         isVisible
-          ? "animate-fade-left px-4 py-4 font-poppins font-bold text-xl tablet:text-base p-1 laptop:p-2 m-1 laptop:m-2 rounded-lg flex items-center transition-all ease-out duration-300 bg-intellectual-grey hover:bg-light-grey text-white hover:scale-105 active:scale-100  tablet:first:ml-0  cursor-none undefined link no-underline"
+          ? "animate-fade-left px-4 py-4 font-inter font-bold text-xl tablet:text-base p-1 laptop:p-2 m-1 laptop:m-2 rounded-lg flex items-center transition-all ease-out duration-300 bg-intellectual-grey hover:bg-light-grey text-white hover:scale-105 active:scale-100  tablet:first:ml-0  cursor-none undefined link no-underline"
           : "opacity-0"
       }`}
       {...props}

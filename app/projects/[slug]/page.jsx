@@ -2,6 +2,7 @@ import Heading from "@/components/Heading";
 import ThreeDimensionsVisualisation from "@/components/ThreeDimensionsVisualisation";
 import { getProject } from "@/lib/projects";
 import NewCarousel from "@/components/NewCarousel";
+import ProjectContent from "@/components/ProjectContent";
 
 export async function generateStaticParams() {
   return [
@@ -16,22 +17,17 @@ export default async function ProjectPage({ params: { slug } }) {
 
   return (
     <>
-      <Heading>{project.title}</Heading>
+      <Heading delay={0}>{project.title}</Heading>
 
       {/*<ProjectsCarousel project={project} delay={750} />*/}
 
-      <NewCarousel project={project} delay={750}/>
+      <NewCarousel project={project} delay={100}/>
 
-      <div className="mt-10">
-        <article
-          dangerouslySetInnerHTML={{ __html: project.body }}
-          className="font-poppins max-w-screen-sm prose prose-slate"
-        />
-      </div>
+<ProjectContent project={project} delay={200}></ProjectContent>
 
       <ThreeDimensionsVisualisation
         project={project}
-        delay={1000}
+        delay={300}
       />
 
       {/*<p className="italic pb-2">{project.date}</p>
