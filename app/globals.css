@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.carousel-item {
+    position: relative;
+  }
+  
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .carousel-control.prev {
+    left: 10px;
+  }
+  
+  .carousel-control.next {
+    right: 10px;
+  }
