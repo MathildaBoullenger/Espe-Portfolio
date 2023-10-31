@@ -15,8 +15,8 @@ export default function ThreeDimensionsVisualisation({ project, delay }) {
   }, [delay]);
 
   return (
-    <div className={`${isVisible ? "animate-fade-left full" : "opacity-0"}`}>
-      <div className="w-full h-full rounded-lg p-8 flex items-center justify-center">
+    <div className={`${isVisible ? "animate-fade-left w-full" : "opacity-0"}`}>
+      <div className="w-full h-full rounded-lg pt-8 flex items-center justify-center">
         {project.visualisations && project.visualisations.length > 0 ? (
           <div className="w-full">
             {project.visualisations.map(
