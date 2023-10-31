@@ -4,7 +4,9 @@ title: "Interior visualisation - Two Bedroom Home"
 date: "2023-10-07"
 
 images:
-- "/images/Garden.webp"
+- "/images/Exterior1.webp"
+- "/images/Exterior2.webp"
+- "/images/Exterior3.webp"
 - "/images/Kitchen.webp"
 - "/images/Bedroom.webp"
 - "/images/LivingRoom.webp"
