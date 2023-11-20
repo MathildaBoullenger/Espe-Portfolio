@@ -49,7 +49,7 @@ export default function ProjectGallery({ projects, delay, category }) {
                         </div>
                         <Image
                           className="w-full h-auto rounded-lg"
-                          src={`/Espe-Portfolio/${image}`}
+                          src={`/${image}`}
                           alt=""
                           width="800"
                           height="600"

@@ -36,7 +36,7 @@ export default function NewCarousel({ project, delay }) {
               }`}
             >
               <img
-                src={`/Espe-Portfolio/${image}`}
+                src={`/${image}`}
                 alt="Slide"
                 className="rounded-lg mt-8"
               />

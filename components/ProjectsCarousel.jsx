@@ -30,7 +30,7 @@ export default function ProjectsCarousel({ project, delay }) {
                 image && (
                   <div key={i} data-carousel-item>
                     <Image
-                      src={`/Espe-Portfolio/${image}`}
+                      src={`/${image}`}
                       className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                       alt="..."
                       width="800"
