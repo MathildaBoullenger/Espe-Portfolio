@@ -4,14 +4,14 @@ title: "Interior visualisation - Two Bedroom Home"
 date: "2023-10-07"
 
 images:
-- "/images/Exterior1.webp"
-- "/images/Exterior2.webp"
-- "/images/Exterior3.webp"
-- "/images/Kitchen.webp"
-- "/images/Bedroom.webp"
-- "/images/LivingRoom.webp"
-- "/images/LivingRoom2.webp"
-- "/images/Bed.webp"
+- "https://esperanzalbani.com/images/Exterior1.webp"
+- "https://esperanzalbani.com/images/Exterior2.webp"
+- "https://esperanzalbani.com/images/Exterior3.webp"
+- "https://esperanzalbani.com/images/Kitchen.webp"
+- "https://esperanzalbani.com/images/Bedroom.webp"
+- "https://esperanzalbani.com/images/LivingRoom.webp"
+- "https://esperanzalbani.com/images/LivingRoom2.webp"
+- "https://esperanzalbani.com/images/Bed.webp"
 
 visualisations:
 - "https://kuula.co/share/59r8r/collection/7XNP2?logo=1&info=1&fs=1&vr=0&zoom=1&sd=1&autop=10&autopalt=1&thumbs=1"
