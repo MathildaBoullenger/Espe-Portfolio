@@ -36,7 +36,7 @@ export default function NewCarousel({ project, delay }) {
               }`}
             >
               <img
-                src={`/${image}`}
+                src={`${image}`}
                 alt="Slide"
                 className="rounded-lg mt-8"
               />
